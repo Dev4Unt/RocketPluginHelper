@@ -1,5 +1,6 @@
 ﻿namespace RocketPluginHelper.Threading.UniTask;
 
+[UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 [SuppressMessage("ReSharper", "InvertIf")]
 public static class UniTaskUtilities
 {
@@ -27,7 +28,17 @@ public static class UniTaskUtilities
             var playerLoop = PlayerLoop.GetCurrentPlayerLoop();
             PlayerLoopHelper.Initialize(ref playerLoop);
 
+            UniTaskScheduler.UnobservedTaskException += OnUniTaskUnobservedExceptionCaughtHandle;
             UniTaskScheduler.DispatchUnityMainThread = false;
         }
+    }
+    public static void Dispose()
+    {
+        UniTaskScheduler.UnobservedTaskException -= OnUniTaskUnobservedExceptionCaughtHandle;
+    }
+
+    private static void OnUniTaskUnobservedExceptionCaughtHandle(Exception ex)
+    {
+        RocketLogger.LogException(ex, "Caught UnobservedTaskException");
     }
 }
