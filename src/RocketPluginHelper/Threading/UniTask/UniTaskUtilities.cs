@@ -30,5 +30,4 @@ public static class UniTaskUtilities
             UniTaskScheduler.DispatchUnityMainThread = false;
         }
     }
-
 }
