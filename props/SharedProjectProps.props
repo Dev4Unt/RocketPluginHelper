@@ -2,11 +2,11 @@
   <PropertyGroup>
     <PackageId>$(AssemblyName)</PackageId>
     <RepositoryType>git</RepositoryType>
-    <Authors>sunnamed434</Authors>
+    <Authors>eternal,sunnamed434</Authors>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <Version>1.0.0</Version>
     <InformationalVersion>1.0.0</InformationalVersion>
-    <Copyright>sunnamed434</Copyright>
+    <Copyright>eternal and sunnamed434</Copyright>
     <LangVersion>latest</LangVersion>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>false</IncludeSymbols>
