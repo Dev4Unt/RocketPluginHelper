@@ -3,6 +3,10 @@
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 public static class OpenModIntegration
 {
+    public static bool IsOpenModInstalledAndLoaded()
+    {
+        return IsOpenModInstalled() && IsOpenModUnturnedLoaded(out _);
+    }
     public static bool IsOpenModInstalled()
     {
         const string modulesDirectoryName = "Modules";
