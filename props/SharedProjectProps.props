@@ -3,9 +3,9 @@
     <PackageId>$(AssemblyName)</PackageId>
     <RepositoryType>git</RepositoryType>
     <Authors>eternal,sunnamed434</Authors>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
-    <Version>1.1.0</Version>
-    <InformationalVersion>1.1.0</InformationalVersion>
+    <AssemblyVersion>1.2.0</AssemblyVersion>
+    <Version>1.2.0</Version>
+    <InformationalVersion>1.2.0</InformationalVersion>
     <Copyright>eternal and sunnamed434</Copyright>
     <LangVersion>latest</LangVersion>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
