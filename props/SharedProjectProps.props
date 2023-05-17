@@ -1,18 +1,28 @@
 <Project>
   <PropertyGroup>
     <PackageId>$(AssemblyName)</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>Unturned RocketMod OpenMod Utility Lib Threading UniTask Helper dotnet csharp cysharp</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Dev4Unt/RocketPluginHelper</PackageProjectUrl>
+    <PackageOwners>Dev4Unt;sunnamed434;Eternal;</PackageOwners>
+    <RepositoryUrl>https://github.com/Dev4Unt/RocketPluginHelper</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Authors>eternal,sunnamed434</Authors>
-    <AssemblyVersion>1.8.0</AssemblyVersion>
-    <Version>1.8.0</Version>
-    <InformationalVersion>1.8.0</InformationalVersion>
-    <Copyright>eternal,sunnamed434</Copyright>
-    <LangVersion>latest</LangVersion>
+    <Authors>Dev4Unt</Authors>
+    <PackageVersion>1.9.0</PackageVersion>
+    <Version>1.9.0</Version>
+    <AssemblyVersion>1.9.0</AssemblyVersion>
+    <InformationalVersion>1.9.0</InformationalVersion>
+    <Company>Dev4Unt</Company>
+    <Copyright>sunnamed434</Copyright>
+    <LangVersion>10</LangVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeSymbols>true</IncludeSymbols>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Nullable>enable</Nullable>
-    <WarningsAsErrors>nullable</WarningsAsErrors>
     <NoWarn>$(NoWarn);NU1701;NU1702;CS0436;CS1591</NoWarn>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
   </PropertyGroup>
 </Project>
