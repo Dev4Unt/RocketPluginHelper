@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2" />
     <PackageReference Include="OpenMod.UniTask" Version="2019.2.2.5" />
     <PackageReference Include="RocketMod.Modern.Dependencies" Version="1.1.2.5" />
   </ItemGroup>

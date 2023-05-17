@@ -24,4 +24,12 @@ public static class AsyncHelper
             }
         });
     }
+    public static TResult RunSync<TResult>(Func<Task<TResult>> func)
+    {
+        return AsyncContext.Run(func);
+    }
+    public static void RunSync(Func<Task> action)
+    {
+        AsyncContext.Run(action);
+    }
 }
