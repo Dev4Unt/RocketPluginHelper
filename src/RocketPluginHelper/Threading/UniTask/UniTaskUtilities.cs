@@ -2,7 +2,7 @@
 
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 [SuppressMessage("ReSharper", "InvertIf")]
-public static class UniTaskUtilities
+public static class UniTaskUtilities 
 {
     public static void InitializeUniTask()
     {
