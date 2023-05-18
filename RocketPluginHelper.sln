@@ -11,11 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		props\SharedProjectProps.props = props\SharedProjectProps.props
 		props\UnityEngineDependentProjectProps.props = props\UnityEngineDependentProjectProps.props
-		.github\actions\nuget-pack\action.yaml = .github\actions\nuget-pack\action.yaml
-		.github\workflows\RocketPluginHelper.yaml = .github\workflows\RocketPluginHelper.yaml
-		.github\actions\project-build\action.yaml = .github\actions\project-build\action.yaml
-		.github\actions\project-build\run-command-for-every-tests-project.ps1 = .github\actions\project-build\run-command-for-every-tests-project.ps1
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{1A6F83DF-CA0B-4C6F-A108-D71B9CDD4D49}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\RocketPluginHelper.yaml = .github\workflows\RocketPluginHelper.yaml
+		.github\actions\project-build\run-command-for-every-tests-project.ps1 = .github\actions\project-build\run-command-for-every-tests-project.ps1
+		.github\actions\project-build\action.yaml = .github\actions\project-build\action.yaml
+		.github\actions\nuget-pack\action.yaml = .github\actions\nuget-pack\action.yaml
 	EndProjectSection
 EndProject
 Global
@@ -31,5 +35,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D56C60E4-778E-4778-8B75-03123FDF27D2} = {F585E3E8-903B-467D-A20B-01177B99A5F7}
+		{1A6F83DF-CA0B-4C6F-A108-D71B9CDD4D49} = {A85A9229-F825-4B2B-B0FA-B36F31EB0464}
 	EndGlobalSection
 EndGlobal
