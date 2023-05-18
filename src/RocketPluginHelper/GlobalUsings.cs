@@ -10,4 +10,3 @@ global using JetBrains.Annotations;
 global using Nito.AsyncEx;
 global using SDG.Unturned;
 global using UnityEngine.LowLevel;
-global using RocketLogger = Rocket.Core.Logging.Logger;

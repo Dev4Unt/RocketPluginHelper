@@ -17,7 +17,7 @@ public static class AsyncHelperEx
                 {
                     if (exceptionHandler == null)
                     {
-                        RocketLogger.LogException(ex, $"Exception occured in task {name}.");
+                        Console.WriteLine($"Exception occured in task \"{name}\", {ex}");
                     }
                     else
                     {

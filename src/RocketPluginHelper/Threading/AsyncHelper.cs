@@ -11,15 +11,15 @@ public static class AsyncHelper
             {
                 await task();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
                 if (exceptionHandler != null)
                 {
-                    exceptionHandler(e);
+                    exceptionHandler(ex);
                 }
                 else
                 {
-                    RocketLogger.LogException(e, $"Exception occured in task \"{name}\"");
+                    Console.WriteLine($"Exception occured in task \"{name}\", {ex}");
                 }
             }
         });

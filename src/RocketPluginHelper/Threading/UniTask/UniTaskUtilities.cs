@@ -39,6 +39,6 @@ public static class UniTaskUtilities
 
     private static void OnUniTaskUnobservedExceptionCaughtHandle(Exception ex)
     {
-        RocketLogger.LogException(ex, "Caught UnobservedTaskException");
+        Console.WriteLine("Caught UnobservedTaskException: " + ex);
     }
 }
