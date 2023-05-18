@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		props\UnityEngineDependentProjectProps.props = props\UnityEngineDependentProjectProps.props
 		.github\actions\nuget-pack\action.yaml = .github\actions\nuget-pack\action.yaml
 		.github\workflows\RocketPluginHelper.yaml = .github\workflows\RocketPluginHelper.yaml
+		.github\actions\project-build\action.yaml = .github\actions\project-build\action.yaml
+		.github\actions\project-build\run-command-for-every-tests-project.ps1 = .github\actions\project-build\run-command-for-every-tests-project.ps1
 	EndProjectSection
 EndProject
 Global

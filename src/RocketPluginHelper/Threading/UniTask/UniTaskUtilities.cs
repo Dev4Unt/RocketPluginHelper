@@ -4,7 +4,7 @@
 [SuppressMessage("ReSharper", "InvertIf")]
 public static class UniTaskUtilities
 {
-    public static void InitializeUniTask() 
+    public static void InitializeUniTask()
     {
         if (PlayerLoopHelper.IsInjectedUniTaskPlayerLoop() == false)
         {
