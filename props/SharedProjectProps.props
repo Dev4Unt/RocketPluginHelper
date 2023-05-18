@@ -9,12 +9,11 @@
     <RepositoryUrl>https://github.com/Dev4Unt/RocketPluginHelper</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Authors>Dev4Unt</Authors>
-    <PackageVersion>1.13.0</PackageVersion>
-    <Version>1.13.0</Version>
-    <AssemblyVersion>1.13.0</AssemblyVersion>
-    <InformationalVersion>1.13.0</InformationalVersion>
     <Company>Dev4Unt</Company>
     <Copyright>sunnamed434</Copyright>
+    <PackageVersion>0.0.0</PackageVersion>
+    <Version>0.0.0</Version>
+    <InformationalVersion>0.0.0</InformationalVersion>
     <LangVersion>10</LangVersion>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
