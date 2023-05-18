@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
-    <LangVersion>10</LangVersion>
+    <PackageDescription>A required tools for every Unturned Plugin Dev</PackageDescription>
   </PropertyGroup>
 
   <ItemGroup>
