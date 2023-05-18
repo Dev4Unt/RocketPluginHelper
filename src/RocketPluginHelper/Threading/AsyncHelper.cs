@@ -1,7 +1,7 @@
 ﻿namespace RocketPluginHelper.Threading;
 
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
-public static class AsyncHelper 
+public static class AsyncHelper
 {
     public static void Schedule(string name, Func<Task> task, Action<Exception>? exceptionHandler = null)
     {
