@@ -2,7 +2,7 @@
   <PropertyGroup>
     <PackageId>$(AssemblyName)</PackageId>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>Unturned RocketMod OpenMod Utility Lib Threading UniTask Helper dotnet csharp cysharp</PackageTags>
+    <PackageTags>Unturned RocketMod OpenMod Utility Lib Threading UniTask Helper dotnet csharp cysharp dev modding vanilla</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Dev4Unt/RocketPluginHelper</PackageProjectUrl>
     <PackageOwners>Dev4Unt;sunnamed434;Eternal;</PackageOwners>
