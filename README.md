@@ -53,6 +53,6 @@ Grab the binaries (compile the solution):
 2. Installed .NET Framework 461 + Dev Pack, and netstandard 2.0
 3. Reference the .dll compiled files to your project (i.e `RocketPluginHelper.dll`)
 
-### Credits
+## Credits
 
 [OpenMod](https://github.com/openmod/openmod) for nuget packages ready-to-go actions and workflows.
