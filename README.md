@@ -7,7 +7,7 @@ A tool that would help you with multi-threading, UniTask, Harmony, and many many
 
 ### Usability
 
-Not always OpenMod is a best choice to make a plugin for Unturned, so, then RocketMod is what we need, but `penMod have a lot of great features for threading, etc, but it's annoying to integrate all code to initialize UniTask (about ~100 new lines of code in Load of the plugin).
+Not always OpenMod is a best choice to make a plugin for Unturned, so, then RocketMod is what we need, but OpenMod have a lot of great features for threading, etc, but it's annoying to integrate all code to initialize UniTask (about ~100 new lines of code in Load of the plugin).
 
 Sometimes you would probably need things to catch an exception when Unturned got updated and Harmony patches doesn't work anymore, and you don't get any exceptions, etc.
 
@@ -53,6 +53,6 @@ Grab the binaries (compile the solution):
 2. Installed .NET Framework 461 + Dev Pack, and netstandard 2.0
 3. Reference the .dll compiled files to your project (i.e `RocketPluginHelper.dll`)
 
-### Credits
+## Credits
 
 [OpenMod](https://github.com/openmod/openmod) for nuget packages ready-to-go actions and workflows.
