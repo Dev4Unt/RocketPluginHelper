@@ -8,11 +8,6 @@ public static class HarmonyExceptionHandler
 
     public static void ReportCleanupException(Type type, Exception? exception, MethodBase? originalMethod)
     {
-        if (exception == null)
-        {
-            return;
-        }
-
         OnReportCleanupRequested?.Invoke(type, exception, originalMethod);
     }
 }
