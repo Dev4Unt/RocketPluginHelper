@@ -6,7 +6,7 @@ public static class CancellationTokenExtensions
     [SuppressMessage("ReSharper", "InvertIf")]
     public static void CancelAndDispose(this CancellationTokenSource source)
     {
+        using var _ = source;
         source.Cancel();
-        source.Dispose();
     }
 }
