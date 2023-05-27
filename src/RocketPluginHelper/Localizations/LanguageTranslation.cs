@@ -22,6 +22,6 @@ public class LanguageTranslation
     }
     private string CombineAndTranslate(string code, string key, params object[] placeHolder)
     {
-        return _translations..Translate($"{code}{KnownSteamLanguages.UnderscoreSymbol}{key}", placeHolder);
+        return _translations.Instance.Translate($"{code}{KnownSteamLanguages.UnderscoreSymbol}{key}", placeHolder);
     }
 }
