@@ -11,5 +11,6 @@ global using System.Threading.Tasks;
 global using Cysharp.Threading.Tasks;
 global using JetBrains.Annotations;
 global using Nito.AsyncEx;
+global using Rocket.API.Collections;
 global using SDG.Unturned;
 global using UnityEngine.LowLevel;
