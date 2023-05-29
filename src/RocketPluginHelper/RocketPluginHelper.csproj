@@ -9,10 +9,10 @@
   <Import Project="$(MSBuildThisFileDirectory)..\..\props\UnityEngineDependentProjectProps.props" />
 
   <ItemGroup>
+    <PackageReference Include="OpenMod.UniTask" Version="*" />
+    <PackageReference Include="OpenMod.UnityEngine.Redist" Version="*" />
+    <PackageReference Include="OpenMod.Unturned.Redist" Version="*" />
     <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2" />
-    <PackageReference Include="OpenMod.UniTask" Version="2019.2.2.5" />
-    <PackageReference Include="OpenMod.UnityEngine.Redist" Version="2020.3.38" />
-    <PackageReference Include="OpenMod.Unturned.Redist" Version="3.23.5" />
     <PackageReference Include="RocketMod.Modern.Dependencies" Version="1.1.2.5" />
   </ItemGroup>
 
