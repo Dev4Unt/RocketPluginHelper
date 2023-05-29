@@ -15,3 +15,4 @@ global using Rocket.API;
 global using Rocket.API.Collections;
 global using SDG.Unturned;
 global using UnityEngine.LowLevel;
+global using UnityColor = UnityEngine.Color;
