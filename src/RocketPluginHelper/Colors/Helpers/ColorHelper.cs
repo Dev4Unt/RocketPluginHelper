@@ -4,7 +4,6 @@ namespace RocketPluginHelper.Colors.Helpers;
 [SuppressMessage("ReSharper", "InvertIf")]
 public static class ColorHelper
 {
-    [SuppressMessage("ReSharper", "UnusedMethodReturnValue.Global")]
     public static bool TryParseRGBAString(string colorString, out UnityColor color, UnityColor? defaultColor = null)
     {
         color = defaultColor ?? UnityColor.white;
