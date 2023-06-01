@@ -4,7 +4,7 @@
     <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <PackageDescription>A required tools for every Unturned Plugin Dev</PackageDescription>
   </PropertyGroup>
-  
+
   <Import Project="$(MSBuildThisFileDirectory)..\..\props\SharedProjectProps.props" />
   <Import Project="$(MSBuildThisFileDirectory)..\..\props\UnityEngineDependentProjectProps.props" />
 
@@ -13,7 +13,7 @@
     <PackageReference Include="OpenMod.UnityEngine.Redist" Version="*" />
     <PackageReference Include="OpenMod.Unturned.Redist" Version="*" />
     <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2" />
-    <PackageReference Include="RocketMod.Modern.Dependencies" Version="1.1.2.5" />
+    <PackageReference Include="RocketMod.Modern.Dependencies" Version="1.1.2.5" PrivateAssets="true" />
   </ItemGroup>
 
 </Project>
