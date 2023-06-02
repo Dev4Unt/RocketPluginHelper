@@ -16,7 +16,11 @@ public class LanguageTranslation
     }
     public string Translate(SteamPlayer steamPlayer, string key, params object[] placeHolder)
     {
-        return steamPlayer.language switch
+        return Translate(steamPlayer.language, key, placeHolder);
+    }
+    public string Translate(string language, string key, params object[] placeHolder)
+    {
+        return language switch
         {
             KnownSteamLanguages.EnglishLanguageName => CombineAndTranslate(KnownSteamLanguages.EnglishLanguageCode, key, placeHolder),
             KnownSteamLanguages.RussianLanguageName => CombineAndTranslate(KnownSteamLanguages.RussianLanguageCode, key, placeHolder),
