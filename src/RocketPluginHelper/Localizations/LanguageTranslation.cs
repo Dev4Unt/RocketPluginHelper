@@ -12,7 +12,10 @@ public class LanguageTranslation
 
     public string Translate(Player player, string key, params object[] placeHolder)
     {
-        var steamPlayer = player.channel.owner;
+        return Translate(player.channel.owner, key, placeHolder);
+    }
+    public string Translate(SteamPlayer steamPlayer, string key, params object[] placeHolder)
+    {
         return steamPlayer.language switch
         {
             KnownSteamLanguages.EnglishLanguageName => CombineAndTranslate(KnownSteamLanguages.EnglishLanguageCode, key, placeHolder),
