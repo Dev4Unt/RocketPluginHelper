@@ -1,4 +1,4 @@
-﻿namespace RocketPluginHelper.Threading.Tokens;
+﻿namespace RocketPluginHelper.Threading;
 
 [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 public static class CancellationTokenExtensions
