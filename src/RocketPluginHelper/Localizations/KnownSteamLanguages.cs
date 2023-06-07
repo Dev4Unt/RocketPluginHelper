@@ -9,6 +9,12 @@ public static class KnownSteamLanguages
     public const string RussianLanguageCode = "ru";
     public const string UnderscoreSymbol = "_";
 
+    public static readonly Dictionary<string, string> Languages = new()
+    {
+        { EnglishLanguageCode, EnglishLanguageName},
+        { RussianLanguageCode, RussianLanguageName},
+    };
+
     public static readonly Language English = new(EnglishLanguageName, EnglishLanguageCode);
     public static readonly Language Russian = new(RussianLanguageName, RussianLanguageCode);
 }
