@@ -16,19 +16,17 @@ public class LanguageTranslation
     }
     public string Translate(SteamPlayer steamPlayer, string key, params object[] placeHolder)
     {
-        return Translate(steamPlayer.language, key, placeHolder);
+        var code = KnownSteamLanguages.GetLanguageCodeFromName(steamPlayer.language) ??
+                   KnownSteamLanguages.EnglishLanguageCode;
+        return Translate(code, key, placeHolder);
     }
-    public string Translate(string language, string key, params object[] placeHolder)
+    public string Translate(string localizationCode, string key, params object[] placeHolder)
     {
-        return language switch
-        {
-            KnownSteamLanguages.EnglishLanguageName => CombineAndTranslate(KnownSteamLanguages.EnglishLanguageCode, key, placeHolder),
-            KnownSteamLanguages.RussianLanguageName => CombineAndTranslate(KnownSteamLanguages.RussianLanguageCode, key, placeHolder),
-            _ => CombineAndTranslate(KnownSteamLanguages.EnglishLanguageCode, key, placeHolder)
-        };
+        return CombineAndTranslate(localizationCode, key, placeHolder);
     }
-    private string CombineAndTranslate(string code, string key, params object[] placeHolder)
+    private string CombineAndTranslate(string localizationCode, string key, params object[] placeHolder)
     {
-        return _translations.Instance.Translate($"{code}{KnownSteamLanguages.UnderscoreSymbol}{key}", placeHolder);
+        return _translations.Instance.Translate($"{localizationCode}{KnownSteamLanguages.UnderscoreSymbol}{key}",
+            placeHolder);
     }
 }
