@@ -1,5 +1,6 @@
 ﻿namespace RocketPluginHelper.Helpers;
 
+[UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
 [SuppressMessage("ReSharper", "ConvertIfStatementToSwitchStatement")]
 public static class DisposeHelper
 {
