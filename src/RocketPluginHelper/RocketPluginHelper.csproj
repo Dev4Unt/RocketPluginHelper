@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net461;net472;netstandard2.0</TargetFrameworks>
     <PackageDescription>A required tools for every Unturned Plugin Dev</PackageDescription>
   </PropertyGroup>
 
@@ -22,6 +22,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" Condition="'$(TargetFramework)' == 'net461' OR '$(TargetFramework)' == 'net472'">
+      <HintPath>..\..\lib\System.Net.Http.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
