@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.24"/>
     <PackageReference Include="RocketMod.Modern.Dependencies" Version="1.1.2.5" PrivateAssets="true"/>
     <PackageReference Include="OpenMod.UniTask" Version="*">
       <IncludeAssets>compile</IncludeAssets>
