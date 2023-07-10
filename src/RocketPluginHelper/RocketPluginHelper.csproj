@@ -9,11 +9,17 @@
   <Import Project="$(MSBuildThisFileDirectory)..\..\props\UnityEngineDependentProjectProps.props"/>
 
   <ItemGroup>
-    <PackageReference Include="OpenMod.UniTask" Version="*"/>
-    <PackageReference Include="OpenMod.UnityEngine.Redist" Version="*"/>
-    <PackageReference Include="OpenMod.Unturned.Redist" Version="*"/>
+    <PackageReference Include="OpenMod.UniTask" Version="*">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="OpenMod.UnityEngine.Redist" Version="*">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="OpenMod.Unturned.Redist" Version="*">
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2"/>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.24"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.0"/>
     <PackageReference Include="RocketMod.Modern.Dependencies" Version="1.1.2.5" PrivateAssets="true"/>
     <PackageReference Include="Legacy2CPSWorkaround" Version="1.0.0">
       <PrivateAssets>All</PrivateAssets>
