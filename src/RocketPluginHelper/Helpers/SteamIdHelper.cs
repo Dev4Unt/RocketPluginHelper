@@ -19,16 +19,4 @@ public static class SteamIdHelper
     {
         return source.playerID.steamID;
     }
-    public static string GetStringSteamId(this Player source)
-    {
-        return source.channel.owner.GetStringSteamId();
-    }
-    public static string GetStringSteamId(this SteamPlayer source)
-    {
-        return source.playerID.steamID.GetStringSteamId();
-    }
-    public static string GetStringSteamId(this CSteamID source)
-    {
-        return source.m_SteamID.ToString();
-    }
 }
