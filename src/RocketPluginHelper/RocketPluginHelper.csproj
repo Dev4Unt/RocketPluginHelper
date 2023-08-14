@@ -17,9 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="System.Net.Http" Condition="'$(TargetFramework)' == 'net461' OR '$(TargetFramework)' == 'net472'">
-      <HintPath>..\..\lib\System.Net.Http.dll</HintPath>
-    </Reference>
     <PackageReference Include="Legacy2CPSWorkaround" Version="1.0.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
